@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/consent.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/main.js"></script>
+  <title>CMS-접수목록</title>
+</head>
+
+<body style="overflow: hidden;">
+  <!-- 팝업 시작-->
+  <div class="allpopup ">
+    <div class="black-bg"></div>
+    <div class="modal-wrap sub-two">
+      <div class="modal-header blue">
+        <p>접수 완료</p>
+      </div>
+      <div class="modal-content">
+        <p>선택하신 이관 신청건을 접수 완료 처리하시겠습니까?</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/01_CMS-1-접수목록-오프라인 동의서 접수.html"><button type="button" class="btn-close">닫기</button></a>
+        <a href="./27_CMS_2_검수교정_시스템 검수 완료 목록 - 접수완료 - 알람.html"><button type="button" class="btn-assent">접수완료</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- 팝업 끝-->
+
+  <!-- 헤더 시작 -->
+  <header>
+    <div class="header-bg">
+      <div class="header">
+        <img src="./img/logo.png" alt="질병관리처-로고">
+        <p>동의서 기록관리 시스템</p>
+      </div>
+    </div>
+  </header>
+  <!-- 해더 끝 -->
+
+  <!-- 왼쪽 메뉴 시작 -->
+  <section>
+    <div class="left-menu">
+      <ul>
+        <li class="toggle-list">
+          <a class="active" href="#">접수 대장
+            <img class="toggle-active" src="./img/arrow.png" alt="내리기">
+          </a>
+          <ul>
+            <li><a class="hover" href="#">접수 목록</a></li>
+            <li><a href="#">검수 교정</a></li>
+            <li><a href="#">접수 현황</a></li>
+          </ul>
+        </li>
+        <li><a href="#">보존 관리</a></li>
+        <li><a href="#">시스템 관리</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- 왼쪽 메뉴 끝 -->
+
+  <!-- 콘텐츠 시작 -->
+  <section class="container">
+    <div class="content inner">
+
+      <!-- 접수 목록 -->
+      <h1>접수 목록</h1>
+      <div class="category">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./img/sub-home.svg" alt="카테고리-홈-로고">
+            </a>
+          </li>
+          <li>
+            <a href="#">접수 대장</a>
+          </li>
+          <li>
+            <a href="#">접수 목록</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 접수 목록 끝 -->
+
+      <!-- 접수 현황 시작 -->
+      <div class="card">
+        <p class="title">접수 현황</p>
+        <div class="cardbox-list">
+          <div class="cardbox">
+            <div class="left">
+              <p>누적</br>접수 건수</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li>
+                  <p>접수 건별</p>
+                  <p><strong class="bold">1,503</strong>건</p>
+                </li>
+                <li>
+                  <p>동의서 건별</p>
+                  <p><strong class="bold">1,200,123</strong>건</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cardbox">
+            <div class="left">
+              <p>누적</br> 접수 구분</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li>
+                  <p>온라인 접수</p>
+                  <p><strong class="bold">1,503,555</strong>건</p>
+                </li>
+                <li>
+                  <p>오프라인 접수</p>
+                  <p><strong class="bold">1,503</strong>건</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cardbox business">
+            <div class="left">
+              <p>사업별</br> 접수현황</p>
+            </div>
+            <div class="right business">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <p>국건영 검체자원화 사업(2021년도)</p>
+                          <p><strong class="bold">40</strong>건</p>
+                        </li>
+                        <li>
+                          <p>코로나19 확진자 멀티오믹스 데이터 생산</p>
+                          <p><strong class="bold">20</strong>건</p>
+                        </li>
+                        <li>
+                          <p>심장정지 발생 원인 및 위험요인 규명 추적조사</p>
+                          <p><strong class="bold">20</strong>건</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <p>국건영 검체자원화 사업(2021년도)</p>
+                          <p><strong>40</strong>건</p>
+                        </li>
+                        <li>
+                          <p>코로나19 확진자 멀티오믹스 데이터 생산</p>
+                          <p><strong>20</strong>건</p>
+                        </li>
+                        <li>
+                          <p>심장정지 발생 원인 및 위험요인 규명 추적조사</p>
+                          <p><strong>20</strong>건</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="right">
+                      <ul>
+                        <li>
+                          <p>국건영 검체자원화 사업(2021년도)</p>
+                          <p><strong class="bold">40</strong>건</p>
+                        </li>
+                        <li>
+                          <p>코로나19 확진자 멀티오믹스 데이터 생산</p>
+                          <p><strong class="bold">20</strong>건</p>
+                        </li>
+                        <li>
+                          <p>심장정지 발생 원인 및 위험요인 규명 추적조사</p>
+                          <p><strong class="bold">20</strong>건</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 접수 현황 끝 -->
+
+      <!-- 온라인 이관신청 목록 시작 -->
+      <div class="card online-list">
+        <p class="title">온라인 이관신청 목록 <strong class="bold">(40건)</strong></p>
+        <div class="search-list">
+          <p>검색</p>
+          <div class="select-01">
+            <select name="transfer-search" id="transfer" class="margin-trans">
+              <option value="1">호스트명</option>
+              <option value="2">호스트명</option>
+              <option value="3">호스트명</option>
+            </select>
+          </div>
+          <div class="searchbox">
+            <input type="search" class="input-search">
+            <img src="./img/search.png" alt="검색">
+          </div>
+        </div>
+        <div class="online-table">
+          <table>
+            <thead>
+              <tr>
+                <th>접수번호</th>
+                <th>코호트명</th>
+                <th>기관명</th>
+                <th>동의서유형</th>
+                <th>동의서명</th>
+                <th>신청자</th>
+                <th>신청일자</th>
+                <th>신청건수</th>
+                <th class="btn-list">상세/검수/반려</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01-11-3201-00001</td>
+                <td>국건영 검체자원화 사업(2021년도)</td>
+                <td>서울아산병원</td>
+                <td>전자동의서</td>
+                <td>인체유래물등의 기증동의서</td>
+                <td>홍길동</td>
+                <td>2022-07-01</td>
+                <td>100건</td>
+                <td class="btn-list">
+                  <button class="btn-detail">상세</button>
+                  <button class="btn-examination">검수</button>
+                  <button class="btn-denial">반려</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="number">
+          <nav>
+            <ul>
+              <li><a class="numicon prev-prev" href="#"><img src="./img/num-prev.png" alt=""></a></li>
+              <li><a class="numicon prev" href="#"><img src="./img/prev.png" alt=""></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+              <li><a class="numicon next" href="#"><img src="./img/next.svg" alt=""></a></li>
+              <li><a class="numicon next-next" href="#"><img src="./img/num-next.svg" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 온라인 이관신청 목록 끝 -->
+
+      <!-- 오프라인 이관신청 목록 시작 -->
+      <div class="card online-list">
+        <div class="btnandtitle">
+          <p class="title">오프라인 이관신청 목록 <strong class="bold">(40건)</strong></p>
+          <div class="btn">
+            <button class="btn-assent">동의서 접수</button>
+          </div>
+        </div>
+        <div class="search-list">
+          <p>검색</p>
+          <div class="select-01">
+            <select name="transfer-search" id="transfer" class="margin-trans">
+              <option value="1">호스트명</option>
+              <option value="2">호스트명</option>
+              <option value="3">호스트명</option>
+            </select>
+          </div>
+          <div class="searchbox">
+            <input type="search" class="input-search">
+            <img src="./img/search.png" alt="검색">
+          </div>
+        </div>
+        <div class="online-table">
+          <table>
+            <thead>
+              <tr>
+                <th>접수번호</th>
+                <th>코호트명</th>
+                <th>기관명</th>
+                <th>동의서유형</th>
+                <th>동의서명</th>
+                <th>신청자</th>
+                <th>신청일자</th>
+                <th>신청건수</th>
+                <th class="btn-list">상세/검수/반려</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01-11-3201-00001</td>
+                <td>국건영 검체자원화 사업(2021년도)</td>
+                <td>서울아산병원</td>
+                <td>전자동의서</td>
+                <td>인체유래물등의 기증동의서</td>
+                <td>홍길동</td>
+                <td>2022-07-01</td>
+                <td>100건</td>
+                <td class="btn-list">
+                  <button class="btn-detail">상세</button>
+                  <button class="btn-examination">검수</button>
+                  <button class="btn-denial">반려</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="number">
+          <nav>
+            <ul>
+              <li><a class="numicon prev-prev" href="#"><img src="./img/num-prev.png" alt=""></a></li>
+              <li><a class="numicon prev" href="#"><img src="./img/prev.png" alt=""></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">10</a></li>
+              <li><a class="numicon next" href="#"><img src="./img/next.svg" alt=""></a></li>
+              <li><a class="numicon next-next" href="#"><img src="./img/num-next.svg" alt=""></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- 오프라인 이관신청 목록 끝 -->
+    </div>
+  </section>
+</body>
+
+</html>
